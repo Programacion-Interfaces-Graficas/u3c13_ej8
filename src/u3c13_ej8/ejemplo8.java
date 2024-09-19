@@ -29,9 +29,9 @@ class proceso implements Runnable {
     
     // Método que ejecuta el hilo, llamando al método 'imprimir' de 'mensaje'
     public void run() {
-    //	synchronized(target) {   //Synchronized block
+    	synchronized(target) {   //Synchronized block
     		target.imprimir(msg);
-    	//}
+    	}
     }
 }
 
